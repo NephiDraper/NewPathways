@@ -22,6 +22,19 @@ a {
     align-items: center;
     justify-content: center;
 }
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p {
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
 
 /* Hero Section */
 #hero {
@@ -69,8 +82,12 @@ a {
 }
 
 #hero h1:nth-child(3){
-    animation: text_reveal_name .5s ease forwards;
     animation-delay: 3s;
+}
+
+#hero h1:nth-child(4){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 4s;
 }
 
 #hero h1 span{
@@ -96,6 +113,11 @@ a {
     animation-delay: 2.5s;
 }
 
+#hero h1:nth-child(4) span{
+    animation-delay: 3.5s
+}
+
+
 #hero .cta {
     display: inline-block;
     padding: 10px 30px;
@@ -116,10 +138,9 @@ a {
 }
 /* End Hero Section */
 
-/* Service Section  */
-#services{  
-}
-#services .services{
+/* Wellness Section  */
+
+#wellness .wellness{
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
@@ -127,7 +148,7 @@ a {
     padding: 100px 0;
 }
 
-#services .section-title{
+#wellness .section-title{
     font-size: 4rem;
     font-weight: 300;
     color: black;
@@ -136,6 +157,143 @@ a {
     letter-spacing: .2rem;
     text-align: center;
 }
+
+#wellness .section-title span{
+    color: crimson;
+}
+
+#wellness .service-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wraper: wrap;
+    margin-top: 50px;
+}
+
+#wellness .service-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(/media/images/pawel-czerwinski-5QQ2ArDSqIA-unsplash\ \(1\).jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+}
+#wellness .service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .8;
+    z-index: -1;
+}
+.wellness .service-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#wellness .service-item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#wellness .service-item p{
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+/* End Wellness Section */
+
+/* Recovery Section  */
+
+#recovery .recovery{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#recovery .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#recovery .section-title span{
+    color: crimson;
+}
+
+#recovery .service-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wraper: wrap;
+    margin-top: 50px;
+}
+
+#recovery .service-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(/media/images/pawel-czerwinski-5QQ2ArDSqIA-unsplash\ \(1\).jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+}
+#recovery .service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .8;
+    z-index: -1;
+}
+.recovery .service-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#recovery .service-item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#recovery .service-item p{
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+/* End Recovery Section */
+
 /* Keyframes */
 @keyframes text_reveal_box{
     50% {
