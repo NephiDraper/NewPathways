@@ -15,6 +15,11 @@ a {
     text-decoration: none;
 }
 
+#hero {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .container{
     min-height: 100vh;
     width: 100%;
@@ -22,19 +27,14 @@ a {
     align-items: center;
     justify-content: center;
 }
+
 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    float: center;
 }
-p {
-    color: black;
-    font-size: 1.4rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: .05rem;
-}
+
 
 /* Hero Section */
 #hero {
@@ -71,6 +71,11 @@ p {
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: 1.5s;
+    align-content: center;
+}
+
+#strong {
+    align-content: center;
 }
 
 #hero h1:nth-child(1){
@@ -82,12 +87,8 @@ p {
 }
 
 #hero h1:nth-child(3){
-    animation-delay: 3s;
-}
-
-#hero h1:nth-child(4){
-    animation: text_reveal_name .5s ease forwards;
-    animation-delay: 4s;
+    animation: text_reveal_name .3s ease forwards;
+    animation-delay: 2.5s;
 }
 
 #hero h1 span{
@@ -109,12 +110,19 @@ p {
     animation-delay: 1.5s;
 }
 
-#hero h1:nth-child(3) span{
-    animation-delay: 2.5s;
+#hero h2:nth-child(1) span{
+    animation-delay: 2s;
 }
 
-#hero h1:nth-child(4) span{
-    animation-delay: 3.5s
+
+#hero h2{
+    display: block;
+    width: fit-content;
+    font-size: 4em;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 1s ease forwards;
+    animation-delay: 4s;
 }
 
 
@@ -127,251 +135,70 @@ p {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: 36px;
+    margin-top: 10px;
     transition: .3s ease;
     transition-property: background-color, color;
 }
 
 #hero .cta:hover{
     color: white;
-    background-color: crimson;
+    background-color: rgba(245, 6, 6, 0.582);
 }
+
 /* End Hero Section */
 
-/* Recovery Section  */
+/* About Section */
 
-#recovery .recovery{
-    flex-direction: column;
-    text-align: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 100px 0;
+.column {
+    float: left;
+    width: 25%;
 }
 
-#recovery .section-title{
-    font-size: 4rem;
-    font-weight: 300;
-    color: black;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-}
-
-#recovery .section-title span{
-    color: crimson;
-}
-
-#recovery .service-bottom{
+.row {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-#recovery .service-item {
-    flex-basis: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    border-radius: 10px;
-    background-image: url(/media/images/therapy.jpg);
-    background-size: cover;
-    margin: 10px 5%;
-    position: relative;
-    z-index: 1;
-}
-#recovery .service-item::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: .8;
-    z-index: -1;
-}
-.recovery .service-bottom .icon{
-    height: 80px;
-    width: 80px;
-    margin-bottom: 20px;
 }
 
-#recovery .service-item h2{
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+.row div {
+    width: 50%;
 }
 
-#recovery .service-item p{
-    color: white;
-    text-align: left;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-}
-/* End Recovery Section */
-
-/* Wellness Section  */
-
-#wellness .wellness{
-    flex-direction: column;
-    text-align: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 100px 0;
+.noMargin {
+    margin: 0px;
 }
 
-#wellness .section-title{
-    font-size: 4rem;
-    font-weight: 300;
-    color: black;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
+.therapy {
+    background-color: orange;
 }
 
-#wellness .section-title span{
-    color: crimson;
+.float {
+    background-color: blue;
 }
 
-#wellness .service-bottom{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wraper: wrap;
-    margin-top: 50px;
+.massage {
+    background-color: purple;
 }
 
-#wellness .service-item {
-    flex-basis: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    border-radius: 10px;
-    background-image: url(/media/images/pawel-czerwinski-5QQ2ArDSqIA-unsplash\ \(1\).jpg);
-    background-size: cover;
-    margin: 10px 5%;
-    position: relative;
-    z-index: 1;
-}
-#wellness .service-item::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: .8;
-    z-index: -1;
-}
-.wellness .service-bottom .icon{
-    height: 80px;
-    width: 80px;
-    margin-bottom: 20px;
+.red-light {
+    background-color: red;
 }
 
-#wellness .service-item h2{
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
 
-#wellness .service-item p{
-    color: white;
-    text-align: left;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-}
-/* End Wellness Section */
 
-/* Projects section */
-#projects .projects {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 0;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-#projects .projects-header h1 {
-	margin-bottom: 50px;
-}
-#projects .all-projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-#projects .project-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 80%;
-	margin: 20px auto;
-	overflow: hidden;
-	border-radius: 10px;
-}
-#projects .project-info {
-	padding: 30px;
-	flex-basis: 50%;
-	height: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
-}
-#projects .project-info h1 {
-	font-size: 4rem;
-	font-weight: 500;
-}
-#projects .project-info h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	margin-top: 10px;
-}
-#projects .project-info p {
-	color: white;
-}
-#projects .project-img {
-	flex-basis: 50%;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
-}
-#projects .project-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: .7;
-}
-#projects .project-img img {
-	transition: .3s ease transform;
-}
-#projects .project-item:hover .project-img img {
-	transform: scale(1.1);
-}
-/* End Projects section */
+/* End About Section */
 
 
 /* Keyframes */
+
 @keyframes text_reveal_box{
     50% {
-        width: 100%;
+        width: 100% ;
         left: 0;
     }
     100% {
