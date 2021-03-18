@@ -200,7 +200,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./Front-Desk3-1024x683.jpg);
+	background-image: url(../public/brain-circuitry-scaled.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -214,7 +214,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: .7;
+	opacity: .4;
 	z-index: -1;
 }
 #hero .hero {
@@ -273,7 +273,7 @@ p {
 	padding: 100px 0;
 }
 #services .service-top {
-	max-width: 500px;
+	max-width: 600px;
 	margin: 0 auto;
 }
 #services .service-bottom {
@@ -389,7 +389,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: .7;
+	opacity: .4;
 }
 #projects .project-img img {
 	transition: .3s ease transform;
@@ -401,6 +401,8 @@ p {
 
 /* About Section */
 #about .about {
+	background-image: url(../public/Front-Desk3-1024x683.jpg);
+	background-size: cover;
 	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 1200px;
@@ -447,10 +449,10 @@ p {
 }
 /* End About Section */
 
-/* contact Section */
+/* Contact Section */
 #contact .contact {
 	flex-direction: column;
-	max-width: 1200px;
+	max-width: 1500px;
 	margin: 0 auto;
 }
 #contact .contact-items {
@@ -481,14 +483,14 @@ p {
 #contact .contact-info h1 {
 	font-size: 2.5rem;
 	font-weight: 500;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 }
 #contact .contact-info h2 {
 	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 500;
 }
-/*End contact Section */
+/*End Contact Section */
 
 /* Footer */
 #footer {
