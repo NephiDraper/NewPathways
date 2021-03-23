@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>New Pathways Wellness and Recovery</title>
-    <!-- Bootstrap CSS File-->
     <link rel="stylesheet" type="text/css" href="Landing_Page/bootstrap-5.0.0-beta2/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="Landing_Page/css/landing.css">
 </head>
@@ -17,32 +16,33 @@
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-4">
         <li class="nav-item">
-            <a class="nav-link" data-value="about" href="#">About</a>
+            <a class="nav-link" data-value="about" href="#about">About</a>
         </li>  
     <li class="nav-item">
-        <a class="nav-link " data-value="services"href="#">Services</a>    
+        <a class="nav-link " data-value="services"href="#services">Services</a>    
         </li>
         <li class="nav-item"> 
         <a class="nav-link " data-value="cta" href="#">Book Now</a>         
         </li>  
     <li class="nav-item"> 
-        <a class="nav-link " data-value="contact" href="#">Contact</a>       
+        <a class="nav-link " data-value="contact" href="#contact">Contact</a>       
         </li> 
     </ul> 
    </div>
 </nav>
 <!-- End Navigation Section -->
 
-<body>
+<body style="margin:0;">
     <!-- Hero Section -->
     <header class="header">
-        <div class="overlay"></div>
+        <div class="overlay" id="overlay"></div>
         <div class="container">
-            <div class="description">
-            <h1><span> New Pathways</span><span> Recovery & Wellness </span>
+            <div class="hero">
+            <h1><span> NEW PATHWAYS RECOVERY & WELLNESS </span></h1>
             <p> Bring Balance to Your Mind and Body Today </p>
-            <button class="btn btn-outline-secondary btn-lg">Our Services</button>
-            </h1>
+            <div style="display: flex; justify-content: center;">
+            <button class="btn btn-outline-secondary btn-lg">Book Now</button>
+            </div>
         </div>
         </div>
     </header>
@@ -51,16 +51,19 @@
     <!-- About Section -->
     <div class="about" id="about">
         <div class="container">
+            <div class="about"></div>
             <h1 class="text-center">About</h1> 
         </div>
-
         <div class="col-lg-8 col-md-8 col-sm-12 desc">
-            <p> We offer cutting edge technology for Brain Health and 
-                Superior Wellness. Our Services include</p>
+            <p class="text-center">AT OUR WELLNESS AND RECOVERY CENTER WE HAVE CUTTING EDGE TECHNOLOGY AND THERAPY METHODS FOR BRAIN HEALTH AND SUPERIOR WELLNESS</p>
+                <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/aTYWi6JZeqI?showinfo=0&rel=0&fs=0" width="560" height="315" frameborder="0"></iframe>
+            </div>
         </div>
         </div>
     </div>
     </div>
+    <hr>
 
     <!-- End About Section -->
 
@@ -71,7 +74,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="maintxt">
-                    <img src="./Landing_Page/public/therapy.jpg" class="img-fluid">
+                    <img src="./Landing_Page/public/therapy.jpg" class="img-fluid" alt="therapy">
                     <span class="overlay-text">Individual Outpatient Therapy</span>
                     <a href="./Recovery/html/index.html">Book Now</a>
                 </div>
@@ -79,7 +82,7 @@
             
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="maintxt">
-                    <img src="./Landing_Page/public/theurapeutic-massage-1.jpg" class="img-fluid">
+                    <img src="./Landing_Page/public/theurapeutic-massage-1.jpg" class="img-fluid" alt="massage">
                     <span class="overlay-text">Deep Tissue Massages</span>
                     <a href="./Wellness/html/index.html">Book Now</a>
                 </div>
@@ -87,7 +90,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="maintxt">
-                    <img src="./Landing_Page/public/infrared-sauna.jpg" class="img-fluid">
+                    <img src="./Landing_Page/public/infrared-sauna.jpg" class="img-fluid" alt="infraredSauna">
                     <span class="overlay-text">Infrared Saunas</span>
                     <a href="./Wellness/html/index.html">Book Now</a>
                 </div>
@@ -95,14 +98,14 @@
                 
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="maintxt">
-                    <img src="./Landing_Page/public/red-light-therapy-2.JPG" class="img-fluid">
+                    <img src="./Landing_Page/public/red-light-therapy-2.JPG" class="img-fluid" alt="redLightTherapy">
                     <span class="overlay-text">Red Light Therapy</span>
                     <a href="Wellness/html/index.html">Book Now</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="maintxt">
-                    <img src="./Landing_Page/public/float-tank-1.JPG" class="img-fluid">
+                    <img src="./Landing_Page/public/float-tank-1.JPG" class="img-fluid" alt="floatTankTherapy">
                     <span class="overlay-text">Virtual Float Tank Therapy</span>
                     <a href="Wellness/html/index.html">Book Now</a>
                 </div>
@@ -116,6 +119,7 @@
             </div>
         
             </div>
+        </div>
         </div>
     </div>
     <!-- End Services Section-->

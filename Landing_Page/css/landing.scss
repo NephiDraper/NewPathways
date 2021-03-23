@@ -1,9 +1,0 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-@each $color, $value in $theme-colors {
-    .swatch-#{$color} {
-      color: color-yiq($value);
-    }
-  }
-
-
