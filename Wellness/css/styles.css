@@ -401,8 +401,6 @@ p {
 
 /* About Section */
 #about .about {
-	background-image: url(../public/Front-Desk3-1024x683.jpg);
-	background-size: cover;
 	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 1200px;
@@ -451,6 +449,8 @@ p {
 
 /* Contact Section */
 #contact .contact {
+	background-image: url(../public/Front-Desk3-1024x683.jpg);
+	background-size: cover;
 	flex-direction: column;
 	max-width: 1500px;
 	margin: 0 auto;
@@ -459,6 +459,8 @@ p {
 	width: 400px;
 }
 #contact .contact-item {
+	background-color: rgba(255, 255, 255, .15);  
+	backdrop-filter: blur(5px);
 	width: 80%;
 	padding: 20px;
 	text-align: center;
@@ -481,12 +483,12 @@ p {
 	margin-bottom: 10px;
 }
 #contact .contact-info h1 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: 500;
 	margin-bottom: 20px;
 }
 #contact .contact-info h2 {
-	font-size: 1.3rem;
+	font-size: 1.7rem;
 	line-height: 2rem;
 	font-weight: 500;
 }
